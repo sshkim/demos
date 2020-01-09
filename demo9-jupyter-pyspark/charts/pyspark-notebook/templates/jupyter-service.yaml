@@ -10,6 +10,7 @@ metadata:
   name: {{ template "pyspark-notebook.jupyter.service.name" . }}
   namespace: {{ .Release.Namespace }}
 spec:
+  type: "NodePort"
   selector:
     "app.kubernetes.io/component": jupyter
     "app.kubernetes.io/instance": {{ .Release.Name }}

@@ -18,7 +18,7 @@ configMap:
   name:
 jupyter:
   # jupyter.image is the Docker image used to create a Jupyter Notebook pod
-  image: "kublr/pyspark-notebook:spark-2.4.0-hadoop-2.6"
+  image: "sshkim/pyspark-notebook:spark-2.4.0-hadoop-2.6"
   # jupyter.configDir specifies the path of the Jupyter Notebook configuration directory in the pod filesystem
   configDir: "/root/.jupyter"
   # jupyter.localPort specifies the port of Jupyter Notebook inside the pod
